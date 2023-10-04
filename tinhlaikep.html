@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- 
+        công thức tính lãi kép
+
+            s=m*(1+a)^n
+
+                s là tổng cả vốn lẫn lãi
+                m là số tiền gửi
+                n là số kỳ hạn 
+                a là số lãi
+-->
+<script>
+    let m = +prompt("nhập số tiền gửi: ");
+    let n = +prompt("nhập số năm gửi: ");
+    let a = +prompt("nhập lãi suát: ");
+    let x = 1+a/100;
+    let s = m * Math.pow(x, n);
+    document.write("số tiền lãi sau " + n + " năm là: " + s);
+
+</script>
+</body>
+</html>
